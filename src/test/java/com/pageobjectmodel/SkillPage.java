@@ -11,7 +11,7 @@ import com.base.BaseClass;
 import com.interfaceelements.KeySkillsPageInterFaceElement;
 import com.utility.FileReaderManager;
 
-public class AddSkill extends BaseClass implements KeySkillsPageInterFaceElement {
+public class SkillPage extends BaseClass implements KeySkillsPageInterFaceElement {
 
 	@FindBy(xpath = skill_xpath)
 	private WebElement skill;
@@ -22,7 +22,7 @@ public class AddSkill extends BaseClass implements KeySkillsPageInterFaceElement
 	@FindBy(id = save_id)
 	private WebElement save;
 	
-	public AddSkill() {
+	public SkillPage() {
 	PageFactory.initElements(driver, this);
 	}
 	

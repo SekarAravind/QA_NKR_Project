@@ -1,8 +1,9 @@
 package com.pageobjectmanager;
 
-import com.pageobjectmodel.AddEmployment;
-import com.pageobjectmodel.AddSkill;
+import com.pageobjectmodel.EmploymentPage;
+import com.pageobjectmodel.SkillPage;
 import com.pageobjectmodel.LoginPage;
+import com.pageobjectmodel.ResumeHeadLinePage;
 import com.pageobjectmodel.ViewProfile;
 import com.utility.FileReaderManager;
 
@@ -12,8 +13,9 @@ public class PageObjectManager {
 	private LoginPage loginPage;
 	private FileReaderManager fileReader;
 	private ViewProfile profile;
-	private AddSkill addSkill;
-	private AddEmployment addEmployment;
+	private SkillPage addSkill;
+	private EmploymentPage addEmployment;
+	private ResumeHeadLinePage addResumeHeadLine;
 	
 	private static PageObjectManager pageObjectManager;
 	
@@ -46,22 +48,26 @@ public class PageObjectManager {
 		return profile;
 	}
 
-	public AddSkill getAddSkill() {
+	public SkillPage getAddSkill() {
 		if(addSkill == null) {
-			addSkill = new AddSkill();
+			addSkill = new SkillPage();
 		}
 		return addSkill;
 	}
 
-	public AddEmployment getAddEmployment() {
+	public EmploymentPage getAddEmployment() {
 		if(addEmployment == null) {
-			addEmployment = new AddEmployment();
+			addEmployment = new EmploymentPage();
 		}
 		return addEmployment;
 	}
-	
-	
-	
+
+	public ResumeHeadLinePage getAddResumeHeadLine() {
+		if(addResumeHeadLine == null) {
+			addResumeHeadLine = new ResumeHeadLinePage();
+		}
+		return addResumeHeadLine;
+	}
 }
 	
 	

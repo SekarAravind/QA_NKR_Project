@@ -12,7 +12,7 @@ import com.base.BaseClass;
 import com.interfaceelements.EmploymentInterFaceElement;
 import com.utility.FileReaderManager;
 
-public class AddEmployment extends BaseClass implements EmploymentInterFaceElement {
+public class EmploymentPage extends BaseClass implements EmploymentInterFaceElement {
 	
 	@FindBy(xpath = emp_xpath)
 	private WebElement emp;
@@ -62,7 +62,7 @@ public class AddEmployment extends BaseClass implements EmploymentInterFaceEleme
 	@FindBy(xpath = skill_xpath)
 	private WebElement skill;
 	
-	@FindBy(xpath = jobProfile_xpath)
+	@FindBy(id = jobProfile_id)
 	private WebElement jobProfile;
 	
 	@FindBy(id = notice_id)
@@ -74,13 +74,14 @@ public class AddEmployment extends BaseClass implements EmploymentInterFaceEleme
 	@FindBy(id = save_id)
 	private WebElement save;
 	
-	public AddEmployment() {
+	public EmploymentPage() {
 		PageFactory.initElements(driver, this);
 	}
 	
 	public void addEmploymentPage() throws IOException {
-		FileReaderManager data = new FileReaderManager();		
-		jsScrollElement(emp);
+		FileReaderManager data = new FileReaderManager();
+		explicitcitWait(emp);
+		jsScrollDown(500);
 		explicitcitWait(emp);
 		clickElement(emp, "clickable");		
 		explicitcitWait(yearDrop);
@@ -102,12 +103,15 @@ public class AddEmployment extends BaseClass implements EmploymentInterFaceEleme
 		javaScriptClick(jmonth);		
 		passInput(salary, data.getDataProperty("salary"));
 		passInput(skillDrop, data.getDataProperty("skill1"));
+		explicitcitWait(skill);
 		javaScriptClick(skill);
+		explicitcitWait(jobProfile);
+		javaScriptClick(jobProfile);
 		passInput(jobProfile, data.getDataProperty("profile"));
-		//clickElement(notice, "clickable");
-		//clickElement(noticeDays, "clickable");
-		//clickElement(save, "clickable");
-		
+		javaScriptClick(notice);
+		explicitcitWait(notice);
+		javaScriptClick(noticeDays);
+		//javaScriptClick(save);
 	}
 
 }
