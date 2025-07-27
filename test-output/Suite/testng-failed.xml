@@ -5,8 +5,8 @@
     <classes>
       <class name="com.runner.NaukriRunner">
         <methods>
-          <include name="addEducationPage"/>
           <include name="propertySetup"/>
+          <include name="addResumeHeadLinePage"/>
         </methods>
       </class> <!-- com.runner.NaukriRunner -->
     </classes>

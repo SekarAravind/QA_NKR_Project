@@ -36,13 +36,19 @@ public class NaukriRunner extends BaseClass {
 		PageObjectManager.getPageObjectManager().getProfile().profile();		
 	}
 	
+	@Test(priority = 3)
+	public void addResumeHeadLinePage() throws IOException {
+		PageObjectManager.getPageObjectManager().getAddResumeHeadLine().addResumeHeadLinePage();
+	}
+	
 	@Ignore
-	@Test (priority = 3)
+	@Test (priority = 4)
 	public void addSkillPage() throws IOException {
 		PageObjectManager.getPageObjectManager().getAddSkill().addSkillPage();
 	}
 	
-	@Test(priority = 4)
+	@Ignore
+	@Test(priority = 5)
 	public void addEducationPage() throws IOException {
 		PageObjectManager.getPageObjectManager().getAddEmployment().addEmploymentPage();
 	}

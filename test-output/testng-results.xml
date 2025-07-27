@@ -1,69 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="4" passed="2" failed="1" skipped="0">
+<testng-results ignored="2" total="5" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-25T21:29:00 IST" name="Suite" finished-at="2025-07-25T21:30:03 IST" duration-ms="62759">
+  <suite started-at="2025-07-27T14:45:49 IST" name="Suite" finished-at="2025-07-27T14:45:58 IST" duration-ms="9394">
     <groups>
     </groups>
-    <test started-at="2025-07-25T21:29:00 IST" name="Test" finished-at="2025-07-25T21:30:03 IST" duration-ms="62759">
+    <test started-at="2025-07-27T14:45:49 IST" name="Test" finished-at="2025-07-27T14:45:58 IST" duration-ms="9394">
       <class name="com.runner.NaukriRunner">
-        <test-method is-config="true" signature="propertySetup()[pri:0, instance:com.runner.NaukriRunner@4988d8b8]" started-at="2025-07-25T21:29:00 IST" name="propertySetup" finished-at="2025-07-25T21:29:06 IST" duration-ms="5632" status="PASS">
+        <test-method is-config="true" signature="propertySetup()[pri:0, instance:com.runner.NaukriRunner@c0c2f8d]" started-at="2025-07-27T14:45:49 IST" name="propertySetup" finished-at="2025-07-27T14:45:54 IST" duration-ms="5097" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- propertySetup -->
-        <test-method signature="validLoginPage()[pri:1, instance:com.runner.NaukriRunner@4988d8b8]" started-at="2025-07-25T21:29:06 IST" name="validLoginPage" finished-at="2025-07-25T21:29:08 IST" duration-ms="2574" status="PASS">
+        <test-method signature="validLoginPage()[pri:1, instance:com.runner.NaukriRunner@c0c2f8d]" started-at="2025-07-27T14:45:54 IST" name="validLoginPage" finished-at="2025-07-27T14:45:56 IST" duration-ms="2248" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginPage -->
-        <test-method signature="profilePage()[pri:2, instance:com.runner.NaukriRunner@4988d8b8]" started-at="2025-07-25T21:29:08 IST" name="profilePage" finished-at="2025-07-25T21:29:10 IST" duration-ms="1313" status="PASS">
+        <test-method signature="profilePage()[pri:2, instance:com.runner.NaukriRunner@c0c2f8d]" started-at="2025-07-27T14:45:56 IST" name="profilePage" finished-at="2025-07-27T14:45:57 IST" duration-ms="1024" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- profilePage -->
-        <test-method signature="addEducationPage()[pri:4, instance:com.runner.NaukriRunner@4988d8b8]" started-at="2025-07-25T21:29:10 IST" name="addEducationPage" finished-at="2025-07-25T21:30:03 IST" duration-ms="53180" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[ERROR : OCCURED DURING EXPLICIIT WAIT]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: ERROR : OCCURED DURING EXPLICIIT WAIT
-at org.junit.Assert.fail(Assert.java:89)
-at com.base.BaseClass.explicitcitWait(BaseClass.java:148)
-at com.pageobjectmodel.AddEmployment.addEmploymentPage(AddEmployment.java:97)
-at com.runner.NaukriRunner.addEducationPage(NaukriRunner.java:47)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="addResumeHeadLinePage()[pri:3, instance:com.runner.NaukriRunner@c0c2f8d]" started-at="2025-07-27T14:45:57 IST" name="addResumeHeadLinePage" finished-at="2025-07-27T14:45:58 IST" duration-ms="995" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addEducationPage -->
+        </test-method> <!-- addResumeHeadLinePage -->
       </class> <!-- com.runner.NaukriRunner -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
